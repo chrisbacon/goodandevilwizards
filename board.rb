@@ -5,7 +5,7 @@ class Board
         @size = size
         @tiles = {}
         counter = 0
-        while counter < 100
+        while counter < @size
             @tiles[counter] = nil
             counter +=1
         end
