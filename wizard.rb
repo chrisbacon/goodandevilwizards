@@ -1,10 +1,11 @@
 class Wizard
 
-attr_reader :alignment
-    def initialize(alignment, power, questions)
+attr_reader :alignment, :position
+    def initialize(alignment, power, questions, position)
         @alignment = alignment
         @power = power
         @questions = questions
+        @position = position
     end
 
     def ask_question()

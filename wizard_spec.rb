@@ -9,13 +9,17 @@ class TestWizard < Minitest::Test
     def setup
         @question1 = Question.new("Who is the next president?",  "trump")
         @question2 = Question.new("What is the capital of Scotland?", "edinburgh")
-        @good_wizard = Wizard.new(true, 2, [@question1, @question2])
-        @bad_wizard = Wizard.new(false, 2, [@question1, @question2])
+        @good_wizard = Wizard.new(true, 2, [@question1, @question2], 32)
+        @bad_wizard = Wizard.new(false, 2, [@question1, @question2], 64)
         @player = Player.new("Tegan")
     end
 
 def test_good_wizard_has_an_alignment
     assert_equal(true, @good_wizard.alignment)
+end
+
+def test_wizard_has_position
+    assert_equal(32, @good_wizard.position)
 end
 
 def test_wizard_asks_question
