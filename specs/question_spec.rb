@@ -1,6 +1,6 @@
 require('minitest/autorun')
 require('minitest/rg')
-require_relative('question')
+require_relative('../question')
 
 class TestQuestion < Minitest::Test
     def setup

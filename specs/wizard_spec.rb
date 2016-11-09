@@ -1,8 +1,8 @@
 require('minitest/autorun')
 require('minitest/rg')
-require_relative('wizard')
-require_relative('question')
-require_relative('player')
+require_relative('../wizard')
+require_relative('../question')
+require_relative('../player')
 
 class TestWizard < Minitest::Test
 

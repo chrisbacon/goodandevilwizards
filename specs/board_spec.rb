@@ -1,7 +1,7 @@
 require('minitest/autorun')
 require('minitest/rg')
-require_relative('wizard')
-require_relative('board')
+require_relative('../wizard')
+require_relative('../board')
 
 class TestBoard < Minitest::Test
     def setup
